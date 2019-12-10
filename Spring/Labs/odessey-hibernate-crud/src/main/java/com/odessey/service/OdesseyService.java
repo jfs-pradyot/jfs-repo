@@ -9,5 +9,8 @@ public interface OdesseyService {
 	public List<Mission> getMissionDetails();
 	
 	public List<Astronaut> getAstronautDetails();
+	
+	public void updateMissionDetails(Mission missionDetails);
+	public void updateAstronautDetails(Astronaut astronautDetails);
 
 }

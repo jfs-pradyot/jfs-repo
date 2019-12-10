@@ -19,4 +19,18 @@ public class OdesseyRepositoryMySql implements OdesseyRepository {
 		
 	}
 
+
+	@Override
+	public void updateMissionDetails(Mission missionDetails) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void updateAstronautDetails(Astronaut astronautDetails) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

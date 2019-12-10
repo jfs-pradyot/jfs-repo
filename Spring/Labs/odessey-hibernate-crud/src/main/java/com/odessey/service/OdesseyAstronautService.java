@@ -28,4 +28,16 @@ public class OdesseyAstronautService implements OdesseyService {
 		return null;
 	}
 
+	@Override
+	public void updateAstronautDetails(Astronaut astronautDetails) {
+		odesseyRepository.updateAstronautDetails(astronautDetails);
+		
+	}
+	
+	@Override
+	public void updateMissionDetails(Mission missionDetails) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

@@ -26,6 +26,24 @@ public class OdesseyMissionService implements OdesseyService {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+
+	@Override
+	public void updateMissionDetails(Mission missionDetails) {
+		 odesseyRepository.updateMissionDetails(missionDetails);
+		
+	}
+
+
+
+	@Override
+	public void updateAstronautDetails(Astronaut astronautDetails) {
+		
+		
+	}
+	
+	
 	
 	
 	
