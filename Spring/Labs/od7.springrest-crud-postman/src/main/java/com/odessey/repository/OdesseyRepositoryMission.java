@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import com.odessey.model.Astronaut;
 import com.odessey.model.Mission;
 @Repository
-public interface OdesseyRepositoryMission extends JpaRepository<Mission, Integer> {
+public interface OdesseyRepositoryMission extends JpaRepository<Mission, String> {
 
 }

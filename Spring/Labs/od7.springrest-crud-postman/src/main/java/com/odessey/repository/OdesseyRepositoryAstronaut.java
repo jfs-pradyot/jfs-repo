@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.odessey.model.Astronaut;
 
 @Repository
-public interface OdesseyRepositoryAstronaut extends JpaRepository<Astronaut, Integer> {
+public interface OdesseyRepositoryAstronaut extends JpaRepository<Astronaut, String> {
 
 }

@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -18,17 +20,22 @@ import com.odessey.service.OdesseyService;
 @RestController
 public class OdesseyController {
 
+	@Autowired
+	@Qualifier("odesseymissionservice")
+	private OdesseyService odesseyServiceMiss;
 	
-	private OdesseyService odesseyService;
+	@Autowired
+	@Qualifier("odesseyastronautservice")
+	private OdesseyService odesseyserviceAst;
 	
 	@RequestMapping(value="/missiondetails", method = RequestMethod.GET)
 	List<Mission> viewMissionDetails() {
-		return odesseyService.getMissionDetails();
+		return odesseyServiceMiss.getMissionDetails();
 
 	}
 	@RequestMapping(value="/astrodetails", method = RequestMethod.GET)
 	List<Astronaut> viewAstronautDetails() {
-		return odesseyService.getAstronautDetails();
+		return odesseyserviceAst.getAstronautDetails();
 
 
 	}

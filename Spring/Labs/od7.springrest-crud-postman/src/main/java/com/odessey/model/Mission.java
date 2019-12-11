@@ -9,14 +9,15 @@ import javax.persistence.Id;
 @Entity
 public class Mission {
 	@Id
+	@Column(name="missionid")
 	private String missionID;
-	@Column
+	@Column(name="missionname")
 	private String missionName;
-	@Column
+	@Column(name="spacecraft")
 	private String spaceCraft;
-	@Column
+	@Column(name="agency")
 	private String agency;
-	@Column
+	@Column(name="status")
 	private String status;
 	
 	

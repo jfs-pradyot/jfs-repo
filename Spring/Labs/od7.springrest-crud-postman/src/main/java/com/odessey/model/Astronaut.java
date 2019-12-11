@@ -7,12 +7,16 @@ import javax.persistence.Id;
 @Entity
 public class Astronaut {
 	@Id
+	@Column(name="astronautid")
 	private String astronautId;
-	@Column
+	
+	@Column(name="astronautname")
 	private String astronautName;
-	@Column
+	
+	@Column(name="astronautgender")
 	private String astronautGender;
-	@Column
+	
+	@Column(name="astronautcountry")
 	private String astronautCountry;
 	
 	
